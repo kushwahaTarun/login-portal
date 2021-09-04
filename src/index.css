@@ -1,13 +1,71 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box !important;
+  font-family: "Heebo", sans-serif !important;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.titleFirst {
+  font-family: "Quicksand", sans-serif !important;
+  font-size: 60px;
+  font-weight: 600;
+}
+.titleSecond {
+  font-family: "Quicksand", sans-serif !important;
+  color: #badc58 !important;
+  letter-spacing: 1px;
+  font-size: 50px;
+}
+.navbar-brand {
+  color: #badc58 !important;
+  font-size: 35px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+}
+.nav-link {
+  font-size: 17px !important;
+  padding: 0 20px !important;
+  transition: 0.2s;
+}
+.nav-activeClass {
+  border-bottom: 2px solid #f39c12 !important;
+}
+.firstElem h1 {
+  font-size: 65px !important  ;
+  font-family: "Poppins", sans-serif !important;
+}
+.firstElem span {
+  color: #d35400 !important;
+  font-size: 65px !important  ;
+  font-family: "Poppins", sans-serif !important;
+}
+.secondHeading {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 45px !important;
+  color: #ff4757;
+}
+.secondPara {
+  font-size: 18px;
+  text-align: justify;
+  font-family: "Inter", sans-serif !important;
+  color: #57606f !important;
+}
+.firstImg {
+  position: relative;
+  animation-name: login;
+  animation-duration: 4s;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes login {
+  from {
+    top: -50px;
+  }
+  to {
+    top: 10px;
+  }
 }
